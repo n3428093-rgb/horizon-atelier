@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="general.css">
+<title>DOM Structure — Horizon Web</title>
+</head>
+<body class="board-theme">
+<header id="nav" class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container"><img src="logo (2).png" class="img-logo" alt=""></div>
+        <ul class="nav-items">
+            <li class="nav-list"><a href="index.html">Home</a></li>
+            <li class="nav-list"><a href="events.html">Events</a></li>
+            <li class="nav-list"><a href="products.html">Products</a></li>
+            <li class="nav-list"><a href="board.html">Board</a></li>
+            <li class="nav-list"><a href="contact.html">Contacts</a></li>
+            <li class="nav-list"><a href="dom.html">DOM</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main style="padding:24px;">
+    <section class="hero-band">
+        <h1>Horizon Web — DOM Structure</h1>
+        <p class="lead">Below is a static, human-readable DOM tree for each HTML file in the Horizon Web folder.</p>
+    </section>
+
+    <hr class="section-divider"/>
+
+    <section class="dom-output" style="max-width:1100px;margin:20px auto;">
+        <pre style="white-space:pre-wrap; background:rgba(0,0,0,0.6); color:#efe5c8; padding:16px; border-radius:8px; overflow:auto;">
+-- index.html
+html
+  head
+    meta charset
+    meta viewport
+    link (fonts, fontawesome, general.css)
+    title
+  body
+    header.navigation-bar
+      nav.nav-container
+        div.img-container > img.img-logo
+        ul.nav-items > li.nav-list*6 > a.nav-link
+        div.cart-icon#cart-count
+        div.hamburger-container
+    div.slide-container#myNav
+      button.closebtn
+      ul.slide-menu-container > li.nav-list*6
+    main
+      section.home-hero
+        div.hero-content
+          h1.hero-title
+          p.hero-caption
+          div.hero-actions > a.cta-button*2
+      div.site-marquee
+        div.marquee-inner > span
+      section.about-section#about
+        div.about-inner > h2, p, a.cta-link
+      section.featured-section
+        h2
+        div.categories-grid > div.category-card*5
+    footer
+      div.footer-content
+        div.footer-links-group > ul > li > a
+        div.footer-cta > h3 + a
+        div.footer-social > h3 + div.social-icons
+      div.footer-bottom
+        p
+    script src="main.js"
+
+-- board.html
+html
+  head (meta, fonts, fontawesome, general.css, title)
+  body.board-theme
+    header#nav.navigation-bar
+      nav.nav-container
+        div.img-container > img.img-logo
+        ul.nav-items > li.nav-list*6
+        div.cart-icon
+        div.hamburger-container
+    div.slide-container#myNav
+      button.closebtn
+      ul.slide-menu-container
+    main
+      section.hero-band
+        h1 + p
+      hr.section-divider
+      div.board-container
+        div.board-member*9
+          div.member-image > img
+          div.member-info > h3 + p.member-title
+    hr.section-divider
+    footer.gen-footer
+      ...social, links
+    scripts (js/slide.js, main.js)
+    a.back-to-top
+
+-- casual.html
+html
+  head (meta, fonts, fontawesome, general.css, inline back-to-top style)
+  body.category-page
+    header#nav.navigation-bar
+      nav.nav-container
+        img.logo, ul.nav-items, cart, hamburger
+    div.slide-container#myNav
+    main.product-header
+      header.product-header > h1 + h3
+      hr.section-divider
+    section.women-section > div.women-container > div.toggle-buttons > button*2
+    section#women-grid.video-grid
+      div.video-preview*20 (women items)
+        div.thumbnail-row[data-name,data-price,data-image,data-des] > img.thumbnail + div.image-text > button.add-to-cart
+        div.video-info-grid > div.video-info > p.video-title + p.video-author
+    section#men-grid.video-grid (display:none)
+      div.video-preview*20 (men items)
+    section.product-detail#product-detail
+      button + div.detail-container#detail-container
+    div.checkout-slide#checkoutSlide
+      close div, h2, div#cart-items, div.total, form#checkoutForm
+    script (inline functions: womenOpen, menOpen, openProduct, backToList, cart handling)
+    script src="js/slide.js"
+    footer.gen-footer
+    script src="main.js"
+    a.back-to-top
+
+-- contact.html
+html
+  head (meta, fonts, fontawesome, general.css, page-specific style)
+  body.contact-theme
+    header#nav.navigation-bar
+      nav.nav-container
+        img.logo, nav items, cart, hamburger
+    div.slide-container#myNav
+    main
+      section.hero-band > h1 + p
+      hr
+      div.contact-options (grid)
+        div.contact-card*2
+          h2 + p + form (appointment / inquiry)
+      hr
+    footer.gen-footer
+    inline <script> (buildMailto + handlers for appointment-form, inquiry-form)
+    scripts js/slide.js, main.js
+    a.back-to-top
+
+-- products.html
+html
+  head ...
+  body.products-page
+    header.navigation-bar
+    div.slide-container#myNav
+    main
+      section.main-body > div.container*5 > div.image-container > img + div.image-text > a
+    div.new-arrival h1
+    section#product-list.video-grid
+      div.video-preview*4
+        div.thumbnail-row[data-name,data-price,data-image] > img + div.image-text > button
+        div.video-info-grid > div.video-info > p.video-title + p.video-author
+    section.product-detail#product-detail
+    div.checkout-slide#checkoutSlide
+    footer.gen-footer
+    script main.js
+
+-- redcarpet.html, vintage.html, native.html, wedding.html
+(very similar structure to casual/products pages)
+  head/meta/links
+  body.category-page
+    header#nav
+    slide-container#myNav
+    main.product-header
+      header.product-header > h1 + h3
+      hr
+    sections for product grid (women & men)
+    product-detail, checkout slide
+    footer
+    scripts
+
+Notes:
+- Common site fragments: header.navigation-bar (nav-container with logo, nav-items links), slide-container#myNav, footer.gen-footer, scripts (js/slide.js, main.js), and a back-to-top anchor appear on most pages.
+- Many pages share identical product-grid markup: section.video-grid with repeated div.video-preview blocks that carry data-* attributes (data-name, data-price, data-image, data-des).
+- Inline page scripts provide client-side behavior (openProduct, addToCart, cart persistence, nav slide, back-to-top).
+        </pre>
+    </section>
+</main>
+
+<footer class="gen-footer">
+    <div class="footer-content"><div class="footer-links-group"><ul><li><a href="/about.html">About Us</a></li></ul></div></div>
+    <div class="footer-bottom"><p>&copy; 2025 Horizon Atelier. All rights reserved.</p></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

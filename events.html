@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="general.css">
+<title>Events - Horizon Atelier</title>
+</head>
+
+<body class="board-theme">
+    <header id="nav" class="navigation-bar">
+        <nav class="nav-container">
+            <div class="img-container">
+                <img src="logo (2).png" alt="" class="img-logo">
+            </div>
+            <ul class="nav-items">
+                <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-list"><a href="board.html" class="nav-link">Board</a></li>
+                <li class="nav-list"><a href="contact.html" class="nav-link">Contacts</a></li>
+                <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+            </ul>
+
+            <div class="cart-icon" onclick="openSlide()">🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+
+            <div class="hamburger-container" onclick="openNav()">
+                <p class="hamburger">☰</p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-container" id="myNav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <ul class="slide-menu-container">
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+            <li class="nav-list"><a href="board.html" class="nav-link">Board</a></li>
+            <li class="nav-list"><a href="contact.html" class="nav-link">Contacts</a></li>
+            <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero-band">
+            <h1>Upcoming Events</h1>
+            <p>Experience fashion, elegance, and community at Horizon Atelier's exclusive events.</p>
+        </section>
+<div class="site-marquee" aria-hidden="true">
+        <div class="marquee-inner">
+            <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+        </div>
+    </div>
+        <hr class="section-divider"/>
+
+        <div class="events-container">
+            <!-- Winter Fashion Show -->
+            <div class="event-card">
+                <div class="event-card-grid">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&h=300&fit=crop" alt="Winter Fashion Show">
+                    </div>
+                    <div class="event-content">
+                        <h2>Winter Fashion Show 2025</h2>
+                        <div class="event-info">
+                            <p><strong>Date:</strong> December 15, 2025</p>
+                            <p><strong>Time:</strong> 7:00 PM - 9:30 PM</p>
+                            <p><strong>Location:</strong> Grand Plaza Hotel, Ballroom</p>
+                            <p class="event-overview">Join us for an exclusive showcase of our Winter 2025 collection featuring cutting-edge trends in contemporary fashion.</p>
+                        </div>
+                        <button class="view-details-btn" onclick="toggleDetails(event)">View Details</button>
+                        <div class="event-details">
+                            <h3>Event Schedule</h3>
+                            <ul>
+                                <li>7:00 PM - Guest Registration & Welcome Reception</li>
+                                <li>7:30 PM - Fashion Show Begins</li>
+                                <li>9:00 PM - Meet & Greet with Designers</li>
+                                <li>9:30 PM - Networking & Refreshments</li>
+                            </ul>
+                            <h3>What to Expect</h3>
+                            <p>Experience an enchanting evening of fashion and elegance. Our Winter Fashion Show will feature designs from renowned local and international designers. Collections span casual, native wear, red carpet, vintage, and wedding styles.</p>
+                            <p><strong>Perks:</strong> Complimentary valet parking, cocktail hour, and exclusive 20% discount on purchases made at the event. Dress code: Formal attire.</p>
+                            <p>For VIP table reservations, contact our events team at events@horizonatelier.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Holiday Collection Launch -->
+            <div class="event-card">
+                <div class="event-card-grid">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=400&h=300&fit=crop" alt="Holiday Collection Launch">
+                    </div>
+                    <div class="event-content">
+                        <h2>Holiday Collection Launch</h2>
+                        <div class="event-info">
+                            <p><strong>Date:</strong> November 25, 2025</p>
+                            <p><strong>Time:</strong> 5:00 PM - 8:00 PM</p>
+                            <p><strong>Location:</strong> Horizon Atelier Flagship Store</p>
+                            <p class="event-overview">Be the first to explore our exclusive holiday collection with early bird discounts and festive celebrations.</p>
+                        </div>
+                        <button class="view-details-btn" onclick="toggleDetails(event)">View Details</button>
+                        <div class="event-details">
+                            <h3>Event Highlights</h3>
+                            <ul>
+                                <li>Exclusive First Access to Holiday Collection</li>
+                                <li>25% Off for Early Bird Shoppers (first 100 guests)</li>
+                                <li>Complimentary Personal Styling Sessions</li>
+                                <li>Holiday Refreshments & Light Bites</li>
+                                <li>Special Gift Bags for VIP Members</li>
+                            </ul>
+                            <h3>Special Offers</h3>
+                            <p>Join us for a magical evening of fashion and festivities. Enjoy personalized styling sessions with our expert team, refreshments, and be among the first to shop our exclusive holiday collection featuring festive designs perfect for celebrations.</p>
+                            <p><strong>RSVP Required:</strong> Limited seating for styling sessions. RSVP by November 20 at contact@horizonatelier.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Styling Workshop -->
+            <div class="event-card">
+                <div class="event-card-grid">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1557777586-f6682739fcf3?w=400&h=300&fit=crop" alt="Master Styling Workshop">
+                    </div>
+                    <div class="event-content">
+                        <h2>Master Styling Workshop</h2>
+                        <div class="event-info">
+                            <p><strong>Date:</strong> January 10, 2026</p>
+                            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+                            <p><strong>Location:</strong> Horizon Atelier Design Studio</p>
+                            <p class="event-overview">Learn professional styling techniques from industry experts in this hands-on, interactive workshop.</p>
+                        </div>
+                        <button class="view-details-btn" onclick="toggleDetails(event)">View Details</button>
+                        <div class="event-details">
+                            <h3>Workshop Curriculum</h3>
+                            <ul>
+                                <li>Personal Color Analysis & Theory</li>
+                                <li>Body Type Assessment & Flattering Silhouettes</li>
+                                <li>Wardrobe Building Strategies for Every Occasion</li>
+                                <li>Seasonal Styling & Trend Integration</li>
+                                <li>Accessorizing & Final Polish</li>
+                            </ul>
+                            <h3>Workshop Details</h3>
+                            <p>This intensive hands-on workshop is perfect for fashion enthusiasts, aspiring stylists, and anyone looking to elevate their personal style. Our expert team will guide you through professional styling principles, color theory, fabric knowledge, and practical wardrobe management.</p>
+                            <p><strong>Limited to 20 participants.</strong> Early bird pricing: ₦15,000 until December 25, 2025. Regular pricing: ₦20,000. Includes workbook, color swatch guide, and refreshments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trunk Show -->
+            <div class="event-card">
+                <div class="event-card-grid">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1506152983158-b4a74a01c721?w=400&h=300&fit=crop" alt="Trunk Show">
+                    </div>
+                    <div class="event-content">
+                        <h2>Trunk Show - Vintage & Rare Finds</h2>
+                        <div class="event-info">
+                            <p><strong>Date:</strong> December 10, 2025</p>
+                            <p><strong>Time:</strong> 2:00 PM - 6:00 PM</p>
+                            <p><strong>Location:</strong> Horizon Atelier VIP Lounge</p>
+                            <p class="event-overview">Curated selection of vintage, rare, and exclusive pieces not available in regular collections.</p>
+                        </div>
+                        <button class="view-details-btn" onclick="toggleDetails(event)">View Details</button>
+                        <div class="event-details">
+                            <h3>What's Featured</h3>
+                            <ul>
+                                <li>Rare Vintage Pieces (1960s-1990s)</li>
+                                <li>Limited Edition Designer Collections</li>
+                                <li>One-of-a-Kind Artisan Pieces</li>
+                                <li>Exclusive Pre-Order Items</li>
+                            </ul>
+                            <h3>Experience</h3>
+                            <p>Browse our carefully curated collection in an intimate setting. Meet our vintage curators and learn the stories behind each piece. Enjoy refreshments while shopping.</p>
+                            <p><strong>By Appointment Only:</strong> Limited spots available. Contact us at events@horizonatelier.com to reserve your time slot. Invite only access for VIP members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gen-footer">
+        <div class="footer-content">
+            <div class="footer-links-group">
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h3>Contact Us</h3>
+                <a href="mailto:nelson.emmanuel@miva.edu.ng" class="cta-button">Book an Appointment</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle event details with smooth animation
+        function toggleDetails(e) {
+            const button = e.target;
+            const eventCard = button.closest('.event-card');
+            const details = eventCard.querySelector('.event-details');
+            const isExpanded = details.classList.contains('expanded');
+            
+            // Update button text
+            button.textContent = isExpanded ? 'View Details' : 'Show Less';
+            
+            // Toggle expanded class
+            details.classList.toggle('expanded');
+            eventCard.classList.toggle('expanded');
+            
+            // Smooth scroll to card if expanding on mobile
+            if (!isExpanded && window.innerWidth <= 768) {
+                button.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function openNav() {
+            document.getElementById('myNav').style.width = '100%';
+        }
+
+        function closeNav() {
+            document.getElementById('myNav').style.width = '0%';
+        }
+
+        function openSlide() {
+            // Placeholder for cart slide (if needed)
+        }
+
+        // Initialize cart count on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cart-count').textContent = cart.length;
+        });
+    </script>
+
+    <script src="main.js"></script>
+
+    <!-- Back to top button -->
+    <a href="#nav" class="back-to-top" aria-label="Back to top">↑</a>
+</body>
+
+</html>

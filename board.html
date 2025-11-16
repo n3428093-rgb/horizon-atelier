@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="general.css">
+    <title>Board of Trustees - Horizon Atelier</title>
+</head>
+
+<body class="board-theme">
+    <!-- site header (nav + hamburger + cart to match other pages) -->
+    <header id="nav" class="navigation-bar">
+        <nav class="nav-container">
+            <div class="img-container">
+                <img src="logo (2).png" alt="" class="img-logo">
+            </div>
+            <ul class="nav-items">
+                <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-list"><a href="board.html" class="nav-link">Board</a></li>
+                <li class="nav-list"><a href="contact.html" class="nav-link">Contacts</a></li>
+                <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+            </ul>
+
+            <div class="cart-icon" onclick="openSlide()">🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+
+            <div class="hamburger-container" onclick="openNav()">
+                <p class="hamburger">&#9776;</p>
+            </div>
+        </nav>
+    </header>
+
+    <!-- site marquee: announcements below navbar -->
+    <div class="site-marquee" aria-hidden="true">
+        <div class="marquee-inner">
+            <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+        </div>
+    </div>
+
+    <div class="slide-container" id="myNav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <ul class="slide-menu-container">
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+            <li class="nav-list"><a href="contact.html" class="nav-link">Contacts</a></li>
+            <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+        </ul>
+    </div>
+
+    <!-- site marquee already placed above -->
+
+    <main>
+        <section class="hero-band">
+            <h1>Board of Trustees <span class="thistle-accent" aria-hidden="true"></span></h1>
+            <p>Meet the elite team behind the flawless Horizon Atelier — leadership, strategy, and creative direction.</p>
+        </section>
+
+        <hr class="section-divider"/>
+
+        <div class="board-container">
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_002514.png" alt="Mary Jane">
+                </div>
+                <div class="member-info">
+                    <h3>Mr Emmanuel</h3>
+                    <p class="member-title">Chairman of the Board</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_002803.png" alt="Sarah Johnson">
+                </div>
+                <div class="member-info">
+                    <h3>Mr Kelechi</h3>
+                    <p class="member-title">Vice Chairperson</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_002808.png" alt="Michael Chen">
+                </div>
+                <div class="member-info">
+                    <h3>Mr Odinaka</h3>
+                    <p class="member-title">Executive Director</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_002838.png" alt="Emily Rodriguez">
+                </div>
+                <div class="member-info">
+                    <h3>Mr Daniel</h3>
+                    <p class="member-title">Financial Trustee</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_004448.png" alt="David Kim">
+                </div>
+                <div class="member-info">
+                    <h3>Ms. Ogechi</h3>
+                    <p class="member-title">Operations Director</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_003516.png" alt="Lisa Wong">
+                </div>
+                <div class="member-info">
+                    <h3>Ms. Euphemia</h3>
+                    <p class="member-title">Marketing Director</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_002850.png" alt="James Anderson">
+                </div>
+                <div class="member-info">
+                    <h3>Mr Nelson</h3>
+                    <p class="member-title">Technology Director</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/Copilot_20251115_003506.png" alt="Maria Garcia">
+                </div>
+                <div class="member-info">
+                    <h3>Ms. Esther</h3>
+                    <p class="member-title">Brand Development</p>
+                </div>
+            </div>
+
+            <div class="board-member">
+                <div class="member-image">
+                    <img src="images/aisha.png" alt="Robert Taylor">
+                </div>
+                <div class="member-info">
+                    <h3>Ms. Aisha</h3>
+                    <p class="member-title">Strategic Planning</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="section-divider"/>
+
+    <!-- footer copied from other pages to match site -->
+    <footer class="gen-footer">
+        <div class="footer-content">
+            <div class="footer-links-group">
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h3>Contact Us</h3>
+                <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/slide.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Back to top button -->
+    <a href="#nav" class="back-to-top" aria-label="Back to top">↑</a>
+    
+</body>
+
+</html>

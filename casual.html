@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="general.css">
+<title>Casual Collection - Horizon Atelier</title>
+</head>
+
+<body class="category-page">
+<header id="nav" class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container">
+            <img src="logo (2).png" alt="" class="img-logo">
+        </div>
+        <ul class="nav-items">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="board.html" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="dom.html" class="nav-link">DOM</a>
+            </li>
+        </ul>
+
+        <div class="cart-icon" onclick="openSlide()">🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger-container" onclick="openNav()">
+            <p class="hamburger">&#9776;</p>
+        </div>
+    </nav>
+</header>
+
+<!-- site marquee: announcements below navbar -->
+
+
+<div class="slide-container" id="myNav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+
+    <ul class="slide-menu-container">
+        <li class="nav-list">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+            <a href="events.html" class="nav-link">Events</a>
+        </li>
+        <li class="nav-list">
+            <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-list">
+            <a href="board.html" class="nav-link">Boards</a>
+        </li>
+        <li class="nav-list">
+            <a href="contact.html" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-list">
+            <a href="dom.html" class="nav-link">DOM</a>
+        </li>
+    </ul>
+</div>
+
+<main class="product-header">
+    <header class="product-header">
+        <h1>Casual Collection</h1>
+        <h3>Everyday Comfort & Style - Relaxed Elegance for Modern Living</h3>
+    </header>
+    <div class="site-marquee" aria-hidden="true">
+    <div class="marquee-inner">
+        <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+    </div>
+</div>
+    <hr class="section-divider"/>
+</main>
+
+<section class="women-section">
+    <div class="women-container">
+        <div class="toggle-buttons">
+            <button class="section-toggle" onclick="womenOpen()">Women Wears</button>
+            <button class="section-toggle2" onclick="menOpen()">Men Wears</button>
+        </div>
+    </div>
+</section>
+
+<section class="video-grid" id="women-grid">
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Classic Summer Dress" data-price="45000" data-image="images/cas-w-01.jpg" data-des="Lightweight and breathable casual summer dress." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-01.jpg" alt="Classic Summer Dress">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Classic Summer Dress</p>
+                <p class="video-author">₦45,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Floral Casual Shirt" data-price="32000" data-image="images/cas-w-02.jpg" data-des="Beautiful floral print for everyday wear." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-02.jpg" alt="Floral Casual Shirt">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Floral Casual Shirt</p>
+                <p class="video-author">₦32,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Urban Street Jeans" data-price="55000" data-image="images/cas-w-03.jpg" data-des="Trendy denim jeans perfect for casual outings." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-03.jpg" alt="Urban Street Jeans">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Urban Street Jeans</p>
+                <p class="video-author">₦55,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Minimalist White Tee" data-price="25000" data-image="images/cas-w-04.jpg" data-des="Simple yet elegant white t-shirt for any occasion." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-04.jpg" alt="Minimalist White Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Minimalist White Tee</p>
+                <p class="video-author">₦25,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Bohemian Maxi Dress" data-price="78000" data-image="images/cas-w-05.jpg" data-des="Flowing bohemian style perfect for relaxed weekends." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-05.jpg" alt="Bohemian Maxi Dress">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Bohemian Maxi Dress</p>
+                <p class="video-author">₦78,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Striped Casual Blouse" data-price="38000" data-image="images/cas-w-06.jpg" data-des="Navy striped blouse for effortless style." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-06.jpg" alt="Striped Casual Blouse">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Striped Casual Blouse</p>
+                <p class="video-author">₦38,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Denim Skirt Classic" data-price="50000" data-image="images/cas-w-07.jpg" data-des="Versatile denim skirt for everyday looks." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-07.jpg" alt="Denim Skirt Classic">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Denim Skirt Classic</p>
+                <p class="video-author">₦50,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Casual Linen Pants" data-price="62000" data-image="images/cas-w-08.jpg" data-des="Breathable linen pants for warm weather comfort." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-08.jpg" alt="Casual Linen Pants">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Casual Linen Pants</p>
+                <p class="video-author">₦62,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Graphic Print Tee" data-price="28000" data-image="images/cas-w-09.jpg" data-des="Fun graphic print t-shirt for casual vibes." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-09.jpg" alt="Graphic Print Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Graphic Print Tee</p>
+                <p class="video-author">₦28,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Oversized Button-Down" data-price="52000" data-image="images/cas-w-10.jpg" data-des="Comfortable oversized shirt for relaxed styling." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-10.jpg" alt="Oversized Button-Down">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Oversized Button-Down</p>
+                <p class="video-author">₦52,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Pastel Color Dress" data-price="68000" data-image="images/cas-w-11.jpg" data-des="Soft pastel casual dress for a gentle look." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-11.jpg" alt="Pastel Color Dress">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Pastel Color Dress</p>
+                <p class="video-author">₦68,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Athletic Joggers" data-price="42000" data-image="images/cas-w-12.jpg" data-des="Comfortable joggers for active casual wear." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-12.jpg" alt="Athletic Joggers">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Athletic Joggers</p>
+                <p class="video-author">₦42,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Polka Dot Blouse" data-price="48000" data-image="images/cas-w-13.jpg" data-des="Playful polka dot blouse for retro-inspired looks." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-13.jpg" alt="Polka Dot Blouse">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Polka Dot Blouse</p>
+                <p class="video-author">₦48,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Cargo Pants Women" data-price="58000" data-image="images/cas-w-14.jpg" data-des="Practical cargo pants with a modern casual twist." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-14.jpg" alt="Cargo Pants Women">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Cargo Pants Women</p>
+                <p class="video-author">₦58,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Wrap Around Dress" data-price="72000" data-image="images/cas-w-15.jpg" data-des="Flattering wrap dress that suits all body types." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-15.jpg" alt="Wrap Around Dress">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Wrap Around Dress</p>
+                <p class="video-author">₦72,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Cropped Casual Top" data-price="30000" data-image="images/cas-w-16.jpg" data-des="Trendy cropped top for a modern silhouette." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-16.jpg" alt="Cropped Casual Top">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Cropped Casual Top</p>
+                <p class="video-author">₦30,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Wide-Leg Trousers" data-price="65000" data-image="images/cas-w-17.jpg" data-des="Comfortable wide-leg trousers for effortless elegance." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-17.jpg" alt="Wide-Leg Trousers">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Wide-Leg Trousers</p>
+                <p class="video-author">₦65,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Chambray Shirt Women" data-price="44000" data-image="images/cas-w-18.jpg" data-des="Classic chambray shirt versatile for any occasion." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-18.jpg" alt="Chambray Shirt Women">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Chambray Shirt Women</p>
+                <p class="video-author">₦44,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Patterned Shorts" data-price="35000" data-image="images/cas-w-19.jpg" data-des="Fun patterned shorts perfect for warm days." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-19.jpg" alt="Patterned Shorts">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Patterned Shorts</p>
+                <p class="video-author">₦35,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Premium Cotton Tunic" data-price="85000" data-image="images/cas-w-20.jpg" data-des="Premium quality cotton tunic for ultimate comfort." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w-20.jpg" alt="Premium Cotton Tunic">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Premium Cotton Tunic</p>
+                <p class="video-author">₦85,000.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- men section -->
+<section class="video-grid" id="men-grid" style="display: none;">
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Classic Casual Tee" data-price="22000" data-image="images/cas-m-01.jpg" data-des="Comfortable everyday t-shirt for any casual setting." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-01.jpg" alt="Classic Casual Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Classic Casual Tee</p>
+                <p class="video-author">₦22,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Slim Fit Jeans Men" data-price="65000" data-image="images/cas-m-02.jpg" data-des="Stylish slim-fit denim jeans for modern men." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-02.jpg" alt="Slim Fit Jeans Men">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Slim Fit Jeans Men</p>
+                <p class="video-author">₦65,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Casual Shirt Solid" data-price="45000" data-image="images/cas-m-03.jpg" data-des="Breathable casual button-up shirt for relaxed wear." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-03.jpg" alt="Casual Shirt Solid">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Casual Shirt Solid</p>
+                <p class="video-author">₦45,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Geometric Print Tee" data-price="30000" data-image="images/cas-m-04.jpg" data-des="Cool geometric patterned t-shirt for style enthusiasts." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-04.jpg" alt="Geometric Print Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Geometric Print Tee</p>
+                <p class="video-author">₦30,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Casual Shorts Men" data-price="35000" data-image="images/cas-m-05.jpg" data-des="Perfect shorts for summer casual outings." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-05.jpg" alt="Casual Shorts Men">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Casual Shorts Men</p>
+                <p class="video-author">₦35,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Striped Polo Shirt" data-price="48000" data-image="images/cas-m-06.jpg" data-des="Classic striped polo for smart casual occasions." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-06.jpg" alt="Striped Polo Shirt">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Striped Polo Shirt</p>
+                <p class="video-author">₦48,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Relaxed Fit Chinos" data-price="58000" data-image="images/cas-m-07.jpg" data-des="Versatile chinos for comfortable casual style." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-07.jpg" alt="Relaxed Fit Chinos">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Relaxed Fit Chinos</p>
+                <p class="video-author">₦58,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Henley Neck Tee" data-price="32000" data-image="images/cas-m-08.jpg" data-des="Stylish henley neckline shirt for everyday wear." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-08.jpg" alt="Henley Neck Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Henley Neck Tee</p>
+                <p class="video-author">₦32,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Oxford Cloth Shirt" data-price="62000" data-image="images/cas-m-09.jpg" data-des="Premium oxford cloth button-down shirt." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-09.jpg" alt="Oxford Cloth Shirt">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Oxford Cloth Shirt</p>
+                <p class="video-author">₦62,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Athletic Joggers Men" data-price="50000" data-image="images/cas-m-10.jpg" data-des="Comfortable joggers for active lifestyle." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-10.jpg" alt="Athletic Joggers Men">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Athletic Joggers Men</p>
+                <p class="video-author">₦50,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Casual Linen Shirt" data-price="55000" data-image="images/cas-m-11.jpg" data-des="Lightweight linen shirt for summer comfort." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-11.jpg" alt="Casual Linen Shirt">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Casual Linen Shirt</p>
+                <p class="video-author">₦55,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="V-Neck Casual Tee" data-price="28000" data-image="images/cas-m-12.jpg" data-des="Sleek v-neck tee for modern casual look." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-12.jpg" alt="V-Neck Casual Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">V-Neck Casual Tee</p>
+                <p class="video-author">₦28,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Cargo Shorts Men" data-price="42000" data-image="images/cas-m-13.jpg" data-des="Practical cargo shorts with multiple pockets." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-13.jpg" alt="Cargo Shorts Men">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Cargo Shorts Men</p>
+                <p class="video-author">₦42,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Flannel Check Shirt" data-price="52000" data-image="images/cas-m-14.jpg" data-des="Warm and cozy flannel shirt for cooler days." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-14.jpg" alt="Flannel Check Shirt">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Flannel Check Shirt</p>
+                <p class="video-author">₦52,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Oversized Hoodie" data-price="75000" data-image="images/cas-m-15.jpg" data-des="Cozy oversized hoodie for relaxed comfort." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-15.jpg" alt="Oversized Hoodie">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Oversized Hoodie</p>
+                <p class="video-author">₦75,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Denim Jacket Casual" data-price="90000" data-image="images/cas-m-16.jpg" data-des="Classic denim jacket for layering style." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-16.jpg" alt="Denim Jacket Casual">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Denim Jacket Casual</p>
+                <p class="video-author">₦90,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Crew Neck Sweater" data-price="68000" data-image="images/cas-m-17.jpg" data-des="Comfortable crew neck sweater for any season." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-17.jpg" alt="Crew Neck Sweater">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Crew Neck Sweater</p>
+                <p class="video-author">₦68,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Casual Slim Chinos" data-price="60000" data-image="images/cas-m-18.jpg" data-des="Tailored slim chinos for smart casual look." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-18.jpg" alt="Casual Slim Chinos">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Casual Slim Chinos</p>
+                <p class="video-author">₦60,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Vintage Band Tee" data-price="38000" data-image="images/cas-m-19.jpg" data-des="Cool vintage style graphic tee for music lovers." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-19.jpg" alt="Vintage Band Tee">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Vintage Band Tee</p>
+                <p class="video-author">₦38,000.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Premium Cotton Jacket" data-price="120000" data-image="images/cas-m-20.jpg" data-des="High-quality cotton jacket for timeless style." onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-m-20.jpg" alt="Premium Cotton Jacket">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">Premium Cotton Jacket</p>
+                <p class="video-author">₦120,000.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="product-detail" id="product-detail">
+    <button onclick="backToList()">← Back to Shop</button>
+    <div class="detail-container" id="detail-container"></div>
+</section>
+
+<!-- Checkout Slide -->
+<div class="checkout-slide" id="checkoutSlide">
+    <div class="close-slide" onclick="closeSlide()">✖ Close</div>
+    <h2>Checkout</h2>
+    <div id="cart-items"></div>
+    <div class="total">Total: ₦<span id="cart-total">0</span></div>
+    <form id="checkoutForm" onsubmit="submitCheckout(event)">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <select id="payment" required>
+            <option value="">Payment Method</option>
+            <option value="card">Card</option>
+            <option value="transfer">Bank Transfer</option>
+            <option value="cod">Cash on Delivery</option>
+        </select>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+<script>
+function goToCategory(category) {
+    const categoryMap = {
+        'casual': 'casual.html',
+        'native': 'native.html',
+        'redcarpet': 'redcarpet.html',
+        'vintage': 'vintage.html',
+        'wedding': 'wedding.html'
+    };
+    if (categoryMap[category]) {
+        window.location.href = categoryMap[category];
+    }
+}
+
+function womenOpen() {
+    document.getElementById('women-grid').style.display = 'grid';
+    document.getElementById('men-grid').style.display = 'none';
+    const subtitle = document.getElementById('section-subtitle');
+    if (subtitle) subtitle.textContent = 'Women Wears';
+}
+
+function menOpen() {
+    document.getElementById('men-grid').style.display = 'grid';
+    document.getElementById('women-grid').style.display = 'none';
+    const subtitle = document.getElementById('section-subtitle');
+    if (subtitle) subtitle.textContent = 'Men Wears';
+}
+
+function openProduct(element) {
+    const name = element.getAttribute('data-name');
+    const price = element.getAttribute('data-price');
+    const image = element.getAttribute('data-image');
+    const desc = element.getAttribute('data-des');
+    
+    document.getElementById('product-detail').innerHTML = `
+        <button onclick="backToList()">← Back to Shop</button>
+        <div class="detail-container">
+            <img src="${image}" alt="${name}">
+            <div class="detail-info">
+                <h2>${name}</h2>
+                <p>${desc}</p>
+                <p class="price">₦${parseInt(price).toLocaleString()}</p>
+                <button class="add-to-cart-btn" onclick="addToCart('${name}', ${price}, '${image}')">Add to Cart</button>
+            </div>
+        </div>
+    `;
+    document.getElementById('product-detail').style.display = 'block';
+    document.getElementById('women-grid').style.display = 'none';
+    document.getElementById('men-grid').style.display = 'none';
+    document.querySelector('.women-section').style.display = 'none';
+}
+
+function backToList() {
+    document.getElementById('product-detail').style.display = 'none';
+    document.querySelector('.women-section').style.display = 'block';
+    womenOpen();
+}
+
+function openSlide() {
+    document.getElementById('checkoutSlide').style.right = '0';
+}
+
+function closeSlide() {
+    document.getElementById('checkoutSlide').style.right = '-100%';
+}
+
+function openNav() {
+    document.getElementById('myNav').style.width = '100%';
+}
+
+function closeNav() {
+    document.getElementById('myNav').style.width = '0%';
+}
+
+function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name, price, image });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartCount();
+    alert(`${name} added to cart!`);
+}
+
+function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    document.getElementById('cart-count').textContent = cart.length;
+}
+
+function submitCheckout(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const payment = document.getElementById('payment').value;
+    
+    let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
+    submissions.push({ name, email, address, payment, date: new Date().toLocaleString() });
+    localStorage.setItem('submissions', JSON.stringify(submissions));
+    
+    alert('Order placed successfully!');
+    closeSlide();
+}
+
+// Initialize cart count on page load
+updateCartCount();
+</script>
+
+<script src="js/slide.js"></script>
+<footer class="gen-footer">
+    <div class="footer-content">
+        <div class="footer-links-group">
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-cta">
+            <h3>Contact Us</h3>
+            <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fab fa-x-twitter"></i> 
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
+    </div>
+</footer>
+<script src="main.js"></script>
+
+<!-- Back to top button -->
+<a href="#nav" class="back-to-top" aria-label="Back to top">↑</a>
+
+</body>
+
+</html>

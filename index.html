@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Cinzelfamily=Playwrite+Mexico+Guides&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="general.css">
+<title>Horizon Atelier - Home</title>
+</head>
+
+<body>
+<header class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container">
+            <img src="logo (2).png" alt="" class="img-logo">
+        </div>
+        <ul class="nav-items">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="board.html" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="dom.html" class="nav-link">DOM</a>
+            </li>
+        </ul>
+
+        <div class="cart-icon" onclick="openSlide()">🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger-container" onclick="openNav()">
+            <p class="hamburger">&#9776;</p>
+        </div>
+    </nav>
+</header>
+
+<div class="slide-container" id="myNav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+
+    <ul class="slide-menu-container">
+        <li class="nav-list">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+            <a href="events.html" class="nav-link">Events</a>
+        </li>
+        <li class="nav-list">
+            <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-list">
+            <a href="board.html" class="nav-link">Boards</a>
+        </li>
+        <li class="nav-list">
+            <a href="contact.html" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-list">
+            <a href="dom.html" class="nav-link">DOM</a>
+        </li>
+    </ul>
+</div>
+
+<main>
+    <section class="home-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Horizon Atelier</h1>
+            <p class="hero-caption"><em>Where elegance meets contemporary vision</em></p>
+            <div class="hero-actions">
+                <a href="products.html" class="cta-button primary">Explore Collection</a>
+                <a href="about.html" class="cta-button secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- site marquee: announcements under hero -->
+    <div class="site-marquee" aria-hidden="true">
+        <div class="marquee-inner">
+            <span>New arrivals • Tailoring appointments available • Free shipping on orders over ₦50,000</span>
+        </div>
+    </div>
+
+    <!-- About Us section (appears on scroll) -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <h2>About Us</h2>
+            <p>Horizon Atelier crafts bespoke and ready-to-wear pieces that blend tradition with modern design. Our expert tailors and designers deliver attention to detail, quality fabrics, and personalised fittings for every occasion.</p>
+            <a href="about.html" class="cta-link">Learn more</a>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2>Featured Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <a href="native.html"><img src="https://images.unsplash.com/photo-1659714838890-43a3ef681277?" alt="Native Wears"></a>
+                <h3>Native Wears</h3>
+                <p>Traditional meets modern</p>
+            </div>
+            <div class="category-card">
+                <a href="casual.html"><img src="https://images.unsplash.com/photo-1583777256053-1ac2b4ea398f?" alt="Casual Wears"></a>
+                <h3>Casual Wears</h3>
+                <p>Everyday Freestyle</p>
+            </div>
+            <div class="category-card">
+                <a href="wedding.html"><img src="https://images.unsplash.com/photo-1645827042168-4fb0cdd0bf7e?" alt="Wedding Wears"></a>
+                <h3>Wedding Wears</h3>
+                <p>Celebrate in style</p>
+            </div>
+            <div class="category-card">
+                <a href="redcarpet.html"><img src="https://images.unsplash.com/photo-1634632329171-29513d0fe639?" alt="Red Carpet"></a>
+                <h3>Red Carpet</h3>
+                <p>Glamour for events</p>
+            </div>
+            <div class="category-card">
+                <a href="vintage.html"><img src="https://images.unsplash.com/photo-1675875053102-bc894884c564?" alt="Vintage"></a>
+                <h3>Vintage Wears</h3>
+                <p>Timeless classics</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <div class="footer-links-group">
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-cta">
+            <h3>Contact Us</h3>
+            <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fab fa-x-twitter"></i> 
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+
+</html>

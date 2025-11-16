@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="general.css">
+    <title>Contact - Horizon Atelier</title>
+</head>
+
+<body class="contact-theme">
+    <!-- site header (nav + hamburger + cart to match other pages) -->
+    <header id="nav" class="navigation-bar">
+        <nav class="nav-container">
+            <div class="img-container">
+                <img src="logo (2).png" alt="" class="img-logo">
+            </div>
+            <ul class="nav-items">
+                <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+                <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-list"><a href="board.html" class="nav-link">Board</a></li>
+                <li class="nav-list"><a href="contact.html" class="nav-link">Contacts</a></li>
+                <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+            </ul>
+
+            <div class="cart-icon" onclick="openSlide()">🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+
+            <div class="hamburger-container" onclick="openNav()">
+                <p class="hamburger">&#9776;</p>
+            </div>
+        </nav>
+    </header>
+
+    <!-- site marquee: announcements below navbar -->
+  
+    <div class="slide-container" id="myNav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+        <ul class="slide-menu-container">
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-list"><a href="products.html" class="nav-link">Products</a></li>
+            <li class="nav-list"><a href="board.html" class="nav-link">Board</a></li>
+            <li class="nav-list"><a href="dom.html" class="nav-link">DOM</a></li>
+        </ul>
+    </div>
+
+    <!-- site marquee already placed above -->
+
+    <main>
+        <section class="hero-band">
+            <h1>Contact & Appointments</h1>
+            <p>Book an appointment or make an inquiry — we're happy to help. Direct messages will be sent to <strong>nelson.emmanuel@miva.edu.ng</strong>.</p>
+        </section>
+  <div class="site-marquee" aria-hidden="true">
+        <div class="marquee-inner">
+            <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+        </div>
+    </div>
+
+        <hr class="section-divider" />
+
+        <div class="contact-options">
+            <div class="contact-card">
+                <div class="card-content">
+                    <h2>Book Appointment</h2>
+                    <p>Fill the form below and click "Book Appointment" — your email client will open to send the request.</p>
+
+                    <div class="form-container">
+                        <form id="appointment-form">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reason">Reason for Appointment</label>
+                                <textarea id="reason" name="reason" placeholder="Please briefly explain the reason for the appointment" required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="card-content">
+                    <h2>Other Inquiries</h2>
+                    <p>If you have other questions, please use the inquiry form.</p>
+                    <div class="form-container">
+                        <form id="inquiry-form">
+                            <div class="form-group">
+                                <label for="inq-name">Full Name</label>
+                                <input type="text" id="inq-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inq-email">Email</label>
+                                <input type="email" id="inq-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inq-message">Message</label>
+                                <textarea id="inq-message" name="message" placeholder="Type your inquiry here" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider" />
+
+    </main>
+
+    <!-- footer copied from other pages to match site -->
+    <footer class="gen-footer">
+        <div class="footer-content">
+            <div class="footer-links-group">
+                <ul>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <h3>Contact Us</h3>
+                <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Ensure mailto uses the requested email address
+        function buildMailto(subject, body) {
+            return 'mailto:nelson.emmanuel@miva.edu.ng?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var apptForm = document.getElementById('appointment-form');
+            if (apptForm) {
+                apptForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var name = document.getElementById('name').value.trim();
+                    var email = document.getElementById('email').value.trim();
+                    var phone = document.getElementById('phone').value.trim();
+                    var date = document.getElementById('date').value;
+                    var time = document.getElementById('time').value;
+                    var reason = document.getElementById('reason').value.trim();
+
+                    var subject = 'Appointment Booking Request';
+                    var bodyLines = [];
+                    bodyLines.push('Name: ' + name);
+                    bodyLines.push('Email: ' + email);
+                    bodyLines.push('Phone: ' + phone);
+                    bodyLines.push('Preferred Date: ' + date);
+                    bodyLines.push('Preferred Time: ' + time);
+                    bodyLines.push('Reason: ' + reason);
+
+                    var body = bodyLines.join('\n');
+                    var mailto = buildMailto(subject, body);
+
+                    // open mail client
+                    window.location.href = mailto;
+                });
+            }
+
+            var inquiryForm = document.getElementById('inquiry-form');
+            if (inquiryForm) {
+                inquiryForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var name = document.getElementById('inq-name').value.trim();
+                    var email = document.getElementById('inq-email').value.trim();
+                    var message = document.getElementById('inq-message').value.trim();
+
+                    var subject = 'Website Inquiry';
+                    var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+                    var mailto = buildMailto(subject, body);
+                    window.location.href = mailto;
+                });
+            }
+        });
+    </script>
+
+    <script src="js/slide.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Back to top button -->
+    <a href="#nav" class="back-to-top" aria-label="Back to top">↑</a>
+</body>
+
+</html>

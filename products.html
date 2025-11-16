@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="general.css">
+<title>Products - Horizon Atelier</title>
+</head>
+
+<body class="products-page">
+<header class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container">
+            <img src="logo (2).png" alt="" class="img-logo">
+        </div>
+        <ul class="nav-items">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="board.html" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="dom.html" class="nav-link">DOM</a>
+            </li>
+        </ul>
+
+        <div class="cart-icon" onclick="openSlide()">🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger-container" onclick="openNav()">
+            <p class="hamburger">&#9776;</p>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="slide-container" id="myNav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+
+    <ul class="slide-menu-container">
+        <li class="nav-list">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+            <a href="events.html" class="nav-link">Events</a>
+        </li>
+        <li class="nav-list">
+            <a href="products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-list">
+            <a href="board.html" class="nav-link">Boards</a>
+        </li>
+        <li class="nav-list">
+            <a href="contact.html" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-list">
+            <a href="dom.html" class="nav-link">DOM</a>
+        </li>
+    </ul>
+</div>
+
+<main>
+    <section class="main-body">
+        <div class="container">
+            <div class="image-container">
+                <img src="images/dao-vi-t-hoang-G5oxphjSeBI-unsplash.jpg" alt="">
+                <div class="image-text">
+                    <a href="native.html">Native Wears</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="images/junel-mujar-rIaJvbHrAok-unsplash.jpg" alt="">
+                <div class="image-text">
+                    <a href="wed.html">Wedding Wears</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="images/red.jpg" alt="">
+                <div class="image-text">
+                    <a href="carpet.html">Red Carpet Wears</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="images/ellie-cooper-41hw9Va4JZY-unsplash.jpg" alt="">
+                <div class="image-text">
+                    <a href="vintage.html">Vintage Wears</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image-container">
+                <img src="images/adele-shafiee-FfdgrWWVgUI-unsplash.jpg" alt="">
+                <div class="image-text">
+                    <a href="casual.html">Casual Wears</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- site marquee: announcements below navbar -->
+<div class="site-marquee" aria-hidden="true">
+    <div class="marquee-inner">
+        <span>Winter Fashion Show • Dec 15 • Holiday Collection Launch • Nov 25 • Master Styling Workshop • Jan 10 • Trunk Show • Dec 10</span>
+    </div>
+</div>
+<div class="new-arrival">
+    <h1>NEW ARRIVAL</h1>
+</div>
+
+<section class="video-grid" id="product-list">
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Rhema Dress" data-price="120000" data-image="images/cas-w0-01.jpg"
+            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
+            onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w0-01.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦120,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Rhema Dress" data-price="120000" data-image="images/cas-w0-01.jpg"
+            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
+            onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-w0-01.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦120,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name=" Women office wear(Casual)" data-price="120000" data-image="images/cas-wo-02.jpg"
+            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
+            onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-wo-02.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Women office wear(Casual)
+                </p>
+                <p class="video-author">
+                    ₦120,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="200000" data-image="images/cas-wo-03.jpg"
+            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
+            onclick="openProduct(this)">
+            <img class="thumbnail" src="images/cas-wo-03.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    Women office wear(Casual)
+                </p>
+                <p class="video-author">
+                    ₦200,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-detail" id="product-detail">
+    <button onclick="backToList()">← Back to Shop</button>
+    <div class="detail-container" id="detail-container"></div>
+</section>
+
+<!-- Checkout Slide -->
+<div class="checkout-slide" id="checkoutSlide">
+    <div class="close-slide" onclick="closeSlide()">✖ Close</div>
+    <h2>Checkout</h2>
+    <div id="cart-items"></div>
+    <div class="total">Total: ₦<span id="cart-total">0</span></div>
+    <form id="checkoutForm" onsubmit="submitCheckout(event)">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <select id="payment" required>
+            <option value="">Payment Method</option>
+            <option value="card">Card</option>
+            <option value="transfer">Bank Transfer</option>
+            <option value="cod">Cash on Delivery</option>
+        </select>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+<footer class="gen-footer">
+    <div class="footer-content">
+        <div class="footer-links-group">
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-cta">
+            <h3>Contact Us</h3>
+            <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fab fa-x-twitter"></i> 
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+
+</html>
